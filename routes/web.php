@@ -1,21 +1,24 @@
 <?php
-
-
-
+//Routes 
 use lib\Route;
+use app\Controllers\HomeController;
 
+//Routes like Laravel framework
 Route::get("/" ,function(){
-    echo "Hello wordls";
+   return HomeController::class;
+
 });
 
 Route::get("/login" ,function(){
-    echo "login";
+    return $data = ['name'=>'fidel'];
 });
 
 Route::put("/add" , function(){
-    echo "data save";
+    return "data save";
+});
+Route::get("/update/:id" , function($id){
+    return "EL id en la ruta es  : $id";
 });
 
 Route::dispatch();
 
-?>
