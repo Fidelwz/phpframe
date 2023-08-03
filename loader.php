@@ -8,3 +8,4 @@ spl_autoload_register(function($case){
         die("error al cargar la clase");
     }
 });
+
