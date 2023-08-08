@@ -4,7 +4,7 @@ spl_autoload_register(function($case){
     if(file_exists($ruta)){
         require_once $ruta;
     }
-    else{
+    else{   
         die("error al cargar la clase");
     }
 });
